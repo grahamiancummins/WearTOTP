@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "WearTOTP"
 include(":app")
- 
+include(":phone")

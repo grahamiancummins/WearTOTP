@@ -1,0 +1,3 @@
+com.symbolscope.weartotp
+string app_name
+style Theme_WearTOTP
