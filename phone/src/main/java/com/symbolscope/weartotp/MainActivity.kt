@@ -32,6 +32,9 @@ class MainActivity : ComponentActivity() {
                         },
                         onImportYaml = {
                             startActivity(Intent(this, YamlImportActivity::class.java))
+                        },
+                        onEnterKey = {
+                            startActivity(Intent(this, EnterKeyActivity::class.java))
                         }
                     )
                 }
@@ -43,7 +46,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun MainScreen(
     onScanQr: () -> Unit,
-    onImportYaml: () -> Unit
+    onImportYaml: () -> Unit,
+    onEnterKey: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -74,6 +78,13 @@ private fun MainScreen(
             modifier = Modifier.fillMaxWidth()
         ) {
             Text("Import from YAML")
+        }
+        Spacer(Modifier.height(12.dp))
+        Button(
+            onClick = onEnterKey,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Enter Key")
         }
     }
 }

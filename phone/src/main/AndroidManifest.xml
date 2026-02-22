@@ -26,6 +26,11 @@
             android:name=".YamlImportActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".EnterKeyActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
     </application>
 
 </manifest>
