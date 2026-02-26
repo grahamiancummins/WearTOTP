@@ -10,6 +10,7 @@
 /.idea/inspectionProfiles/
 .DS_Store
 /build
+/phone/build
 /captures
 .externalNativeBuild
 .cxx
